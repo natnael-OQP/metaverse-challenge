@@ -1,6 +1,8 @@
 import Image from 'next/image'
+import { useMoralis } from 'react-moralis'
 
 const Login = () => {
+    const { authenticate } = useMoralis()
     return (
         <div className="min-h-screen  w-full">
             <div className="absolute  left-[50%] top-[25%]  z-50 -translate-x-[50%]">
@@ -14,7 +16,10 @@ const Login = () => {
                     />
                 </div>
                 {/* login button  */}
-                <button className="mt-5 transform-cpu rounded-md bg-amber-500 px-5 py-2 text-base font-semibold capitalize text-white shadow-md shadow-fuchsia-400 duration-200 hover:scale-105 active:scale-95">
+                <button
+                    onClick={() => authenticate()}
+                    className="mt-5 transform-cpu rounded-md bg-amber-500 px-5 py-2 text-base font-semibold capitalize text-white shadow-md shadow-fuchsia-400 duration-200 hover:scale-105 active:scale-95"
+                >
                     login with MetaMask
                 </button>
             </div>
