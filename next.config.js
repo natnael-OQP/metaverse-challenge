@@ -11,9 +11,4 @@ module.exports = {
         imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
         formats: ['image/avif', 'image/webp'],
     },
-    env: {
-        NEXT_PUBLIC_MORALIS_APP_ID: process.env.NEXT_PUBLIC_MORALIS_APP_ID,
-        NEXT_PUBLIC_MORALIS_SERVER_URL:
-            process.env.NEXT_PUBLIC_MORALIS_SERVER_URL,
-    },
 }
