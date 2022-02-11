@@ -6,7 +6,7 @@ import ChangeUsername from './ChangeUsername'
 function Header() {
     const { user } = useMoralis()
     return (
-        <div className="sticky top-0 z-50 border-b-2 border-blue-500 bg-black p-5  text-blue-500 shadow-sm select-none">
+        <div className="sticky top-2 text-color3 z-50 select-none shadow-lg   bg-gray-700 bg-opacity-60 bg-clip-padding p-5  rounded-xl  backdrop-blur-xl backdrop-filter">
             <div className="grid grid-cols-5 items-end lg:grid-cols-6 lg:items-center">
                 <a
                     href="https://github.com/natnael-OQP"
@@ -25,7 +25,7 @@ function Header() {
                         <Avatar />
                     </div>
 
-                    <h1 className="text-3xl py-2">Welcome to the Metaverse</h1>
+                    <h1 className="py-2 text-3xl">Welcome to the Metaverse</h1>
                     <h2 className="truncate text-4xl font-bold">
                         {user.getUsername()}
                     </h2>

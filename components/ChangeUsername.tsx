@@ -16,7 +16,7 @@ function ChangeUsername() {
     return (
         <div className="absolute top-3 right-3 text-sm md:text-base ">
             <button
-                className="font-semibold hover:text-pink-700"
+                className="font-semibold hover:text-emerald-100 text-color1 hover:underline"
                 disabled={isUserUpdating}
                 onClick={setUsername}
             >
